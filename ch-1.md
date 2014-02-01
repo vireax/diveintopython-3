@@ -16,10 +16,10 @@ Strings. Whew. Where to start. Python 2 had “strings” and “Unicode strings
 
 Bytes vs. strings comes up again and again throughout the book.
 
-    In Files, you’ll learn the difference between reading files in “binary” and “text” mode. Reading (and writing!) files in text mode requires an encoding parameter. Some text file methods count characters, but other methods count bytes. If your code assumes that one character == one byte, it will break on multi-byte characters.
-    In HTTP Web Services, the httplib2 module fetches headers and data over HTTP. HTTP headers are returned as strings, but the HTTP body is returned as bytes.
-    In Serializing Python Objects, you’ll learn why the pickle module in Python 3 defines a new data format that is backwardly incompatible with Python 2. (Hint: it’s because of bytes and strings.) Also, Python 3 supports serializing objects to and from JSON, which doesn’t even have a bytes type. I’ll show you how to hack around that.
-    In Case study: porting chardet to Python 3, it’s just a bloody mess of bytes and strings everywhere. 
+* In Files, you’ll learn the difference between reading files in “binary” and “text” mode. Reading (and writing!) files in text mode requires an encoding parameter. Some text file methods count characters, but other methods count bytes. If your code assumes that one character == one byte, it will break on multi-byte characters.
+* In HTTP Web Services, the httplib2 module fetches headers and data over HTTP. HTTP headers are returned as strings, but the HTTP body is returned as bytes.
+* In Serializing Python Objects, you’ll learn why the pickle module in Python 3 defines a new data format that is backwardly incompatible with Python 2. (Hint: it’s because of bytes and strings.) Also, Python 3 supports serializing objects to and from JSON, which doesn’t even have a bytes type. I’ll show you how to hack around that.
+* In Case study: porting chardet to Python 3, it’s just a bloody mess of bytes and strings everywhere. 
 
 Even if you don’t care about Unicode (oh but you will), you’ll want to read about string formatting in Python 3, which is completely different from Python 2.
 
